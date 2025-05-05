@@ -1,29 +1,29 @@
-const numeroAletorio1 = parseInt(prompt("Digite o primeiro número:"));
-const numeroAletorio2 = parseInt(prompt("Digite o segundo número:"));
-//nessas duas linhas acima, foi criado uma constante junto com um prompt que manda digitar o primeiro numero e o segundo numero 
-if (!isNaN(numeroAleatorio1) && !isNaN(numA)) {
+const numAle1 = parseInt(prompt("Insira o primeiro número:")); // A variável numAle1 solicita que o usuário escolha um número.
+const numAle2 = parseInt(prompt("Insira o segundo número:"));// A variável numAle2 solicita que o usuário escolha um número.
+
+if (!isNaN(numAle1) && !isNaN(numAle2)) {
   let inicio;
   let fim;
-// Define qual número é o menor (início) e qual é o maior (fim)
-  if (num1 < num2) {
-    inicio = num1;
-    fim = num2;
+
+  if (numAle1 < numAle2) {
+    inicio = numAle1;
+    fim = numAle2;
   } else {
-    inicio = num2;
-    fim = num1;
+    inicio = numAle2;
+    fim = numAle1;
   }
 
   let pares = "";
-// Percorre do menor até o maior número
-  for (let i = inicio; i <= fim; i++) {
-     // Se o número for par, adiciona à string 'pares'
+
+  for (let i = inicio; i <= fim; i++) { // Mostra todo os números pares entre os números escolhidos pelo usuário;
     if (i % 2 === 0) {
 
       pares += i + " ";
+      
     }
   }
- // Exibe os números pares encontrados
+
   alert("Números pares entre " + inicio + " e " + fim + ": " + pares);
 } else {
-  alert("Você digitou um número inválido.");
+  alert("Você digitou um número inválido!):");
 }
