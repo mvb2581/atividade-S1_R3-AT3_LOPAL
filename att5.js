@@ -1,16 +1,16 @@
-const numAle1 = parseInt(prompt("Insira o primeiro número:")); // A variável numAle1 solicita que o usuário escolha um número.
-const numAle2 = parseInt(prompt("Insira o segundo número:"));// A variável numAle2 solicita que o usuário escolha um número.
+const numeroAleatorio1 = parseInt(prompt("Insira o primeiro número:")); // A variável solicita que o usuário escolha um número.
+const numeroAleatorio2 = parseInt(prompt("Insira o segundo número:"));// A variável solicita que o usuário escolha um número.
 
-if (!isNaN(numAle1) && !isNaN(numAle2)) {
+if (!isNaN(numeroAleatorio1) && !isNaN(numeroAleatorio2)) {
   let inicio;
   let fim;
 
-  if (numAle1 < numAle2) {
-    inicio = numAle1;
-    fim = numAle2;
+  if (numeroAleatorio1 < numeroAleatorio2) {
+    inicio = numeroAleatorio1;
+    fim = numeroAleatorio2;
   } else {
-    inicio = numAle2;
-    fim = numAle1;
+    inicio = numeroAleatorio2;
+    fim = numeroAleatorio1;
   }
 
   let pares = "";
